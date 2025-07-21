@@ -8,7 +8,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#000000",
+        tabBarActiveTintColor: "#0000FF",
       }}
     >
       <Tabs.Screen
