@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 20,
     marginBottom: 30,
-    marginTop: 20, // Added some top margin
+    marginTop: 20,
   },
   profileImageContainer: {
     marginBottom: 15,
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
   },
   getStartedText: {
     fontSize: 16,
-    color: "#4CAF50",
+    color: "#FF0000", // Changed from green to red
     fontWeight: "500",
   },
   fab: {
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     width: 56,
     height: 56,
     borderRadius: 28,
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#FF0000", // Changed from green to red
     justifyContent: "center",
     alignItems: "center",
     elevation: 8,

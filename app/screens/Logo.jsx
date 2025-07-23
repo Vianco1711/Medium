@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   premiumText: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#0000FF",
+    color: "#000000",
     textTransform: "uppercase",
     letterSpacing: 1,
     marginBottom: 8, // Space between the two lines

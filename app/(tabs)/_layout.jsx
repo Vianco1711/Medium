@@ -8,12 +8,17 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#0000FF",
+        tabBarActiveTintColor: "#FF0000", // Changed to red
+        tabBarInactiveTintColor: "#808080", // Optional: set inactive color
+        tabBarStyle: {
+          backgroundColor: "#FFFFFF", // Optional: set tab bar background
+        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
+          title: "Home", // Optional: add title
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
@@ -26,6 +31,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="search"
         options={{
+          title: "Search", // Optional: add title
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <FontAwesome name="search" size={24} color={color} />
@@ -34,10 +40,10 @@ export default function TabLayout() {
             ),
         }}
       />
-
       <Tabs.Screen
         name="library"
         options={{
+          title: "Library", // Optional: add title
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <FontAwesome name="bookmark" size={24} color={color} />
@@ -49,6 +55,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
+          title: "Profile", // Optional: add title
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "person-circle-sharp" : "person-circle-outline"}
